@@ -1,5 +1,5 @@
 GNIRTS
-#########
+==========
 
 Package gnirts was inspired by [this twitter comment](https://twitter.com/casio_juarez/status/921033719435218950)
 
@@ -10,7 +10,7 @@ Go lacks a built in method for string reversal, leaving people to just do it the
 This leads to different implementations which don't always work for all cases. For example, many of the methods in this library will not work with combination-characters in Unicode. Follow the links to see the original place they came from - the fastest result is not always the most correct one.
 
 How to use gnirts
-##################
+==================
 
 Do not import it.
 
@@ -20,7 +20,11 @@ Do not import it.
 
 It's meant as a benchmark repository just to show the different ways you could do it, and what the tradeoffs are.
 
+Test it by running the following: `make bench` or `make benchmem`
+
 Contributing
-#############
+============
 
 Feel free to open PRs to add new methods, or to suggest better way to organize them, etc, or to better catalogue what each method excels at (for example, works with combination-characters or not, etc)
+
+If you want to contribute code, make sure it passes the 3 analysis tools by running `make deps` followed by `make check`
